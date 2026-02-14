@@ -1,7 +1,7 @@
 {
   "name": "picoli-mcp",
   "mcpName": "io.github.amaterous/picoli-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for picoli.site - URL shortening and click analytics",
   "type": "module",
   "bin": {
