@@ -1,0 +1,16 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+      - PICOLI_API_KEY
+    properties:
+      PICOLI_API_KEY:
+        type: string
+        description: "Your picoli.site API key"
+      PICOLI_BASE_URL:
+        type: string
+        default: "https://picoli.site"
+        description: "API base URL (default: https://picoli.site)"
+  commandFunction: |
+    config => ({ command: 'npx', args: ['-y', 'picoli-mcp'], env: { PICOLI_API_KEY: config.PICOLI_API_KEY, PICOLI_BASE_URL: config.PICOLI_BASE_URL || 'https://picoli.site' } })
