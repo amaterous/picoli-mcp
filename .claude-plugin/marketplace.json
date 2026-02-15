@@ -1,0 +1,9 @@
+{
+  "name": "picoli-mcp",
+  "plugins": [
+    {
+      "name": "picoli-url-shortener",
+      "skills": ["./"]
+    }
+  ]
+}
